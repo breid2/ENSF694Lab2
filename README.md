@@ -11,4 +11,6 @@ The provided example values ran at 7600 nanoseconds for linear and 9100 nanoseco
 ![Output values](Provided_Values_Output.png)
 
 # Question 3:
-To improve the linear search running time redundant lines were removed so each iteration had less steps to complete.
+To improve the linear search running time redundant lines were removed so each iteration had less steps to complete. Before another integer was defined to hold the output (return) value, but that was not needed as the iterator could be returned itself.
+
+![Improved timings](Improved_Provided_Values_Output.png)
