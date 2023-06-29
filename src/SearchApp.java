@@ -12,11 +12,11 @@ public class SearchApp {
 	
 	public SearchApp() {
 		
-		cli = new InteractiveCLI();
+		cli = new InteractiveCLI(); //Create interactive CLI
 	}
 	
 	public void run() {
-		int userNumber;
+		int userNumber; //Initialize variables
 		int userKey;
 		
 		this.cli.prompt("Enter the number of elements in the array: "); //Number of elements from user
@@ -25,7 +25,7 @@ public class SearchApp {
 		int[] userArray = new int[userNumber];
 		
 		for(int i=0; i<=(userNumber-1); i++) {
-			userArray[i] = this.cli.getKeyboardInteger();
+			userArray[i] = this.cli.getKeyboardInteger(); //Get all the array elements from user
 		}
 		
 		this.cli.prompt("Enter the search key: "); //Key from user
