@@ -1,9 +1,6 @@
 /**
  * Class Name: SearchApp
  * 
- * Class representing command-line interface to compute 
- * square root of a number using the Newton method
- * 
  * @author Benjamin Reid
  *
  */

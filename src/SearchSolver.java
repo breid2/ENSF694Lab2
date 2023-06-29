@@ -1,7 +1,6 @@
 /**
  * Class Name: SearchSolver
  * 
- * 
  * @author Benjamin Reid
  *
  */
@@ -15,7 +14,7 @@ public class SearchSolver {
 		this.userKey = userKey;
 		System.out.println("");
 		System.out.println("Using Linear Search:");
-		Arrays.sort(userArray);
+		//Arrays.sort(userArray);
 		long startLinear = System.nanoTime();
 		int lin = LinearSearch(userArray, userKey);
 		long endLinear = System.nanoTime();
@@ -43,8 +42,8 @@ public class SearchSolver {
 		
 		System.out.println("");
 		System.out.println("Time for linear: " + timeLinear + " nanoseconds."); 
-		//Linear is faster since it is better with smaller data sets. The example values ran at 4200 nanoseconds for linear
-		// and 8500 nanoseconds for interpolation.
+		//Linear is faster since it is better with smaller data sets. The provided example values ran at 4200 nanoseconds 
+		//for linear and 8500 nanoseconds for interpolation.
 		System.out.println("Time for interpolation: " + timeInter + " nanoseconds.");
 
 	}
@@ -52,7 +51,9 @@ public class SearchSolver {
 	public int LinearSearch(int[] userArray, int userKey) {
 
 		for(int i=0; i<(userArray.length); i++) {
+			//int keyFound = i; //- removed to increase speed
 			if (userArray[i] == userKey) {
+				//return keyFound; //- removed to increase speed
 				return i;
 			}
 		}
